@@ -1,5 +1,5 @@
 ## Assignment 1
-In this programming problem and the next you'll code up the greedy algorithms from lecture for minimizing the weighted sum of completion times..
+In this programming problem and the next you'll code up the greedy algorithms from lecture for minimizing the weighted sum of completion times.
 
 Download the text file below.
 

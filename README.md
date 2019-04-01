@@ -7,11 +7,15 @@ Courses can be found in [Coursera](https://www.coursera.org/learn/algorithms-gre
 ## Course list
 
 - Week 1:
-  - 17: TWO MOTIVATING APPLICATIONS
-  - 18: INTRODUCTION TO GREEDY ALGORITHMS
-  - 19: A SCHEDULING APPLICATION
-  - 20: PRIM'S MINIMUM SPANNING TREE ALGORITHM
+  - 17: Two Motivating Applications
+  - 18: Greedy Algorithms
+  - 19: A Scheduling Application (Programming Assignment #1 1,2)
+  - 20: Prim's Minimum Spanning Tree Algorithm (Programming Assignment #1 3) => Heap data structure
   - Problem Set #1
 - Week 2:
+  - 21: Kruskal's Minimum Spanning Tree Algorithm => Union-Find data structure
+  - 22: (part 7) Clustering (Programming Assignment #1 1,2)
+  - 23: Advanced Union-Find (Optional)
+  - Problem Set #2
 - Week 3:
 - Week 4:

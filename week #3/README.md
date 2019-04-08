@@ -24,10 +24,11 @@ ADVICE: If you're not getting the correct answer, try debugging your algorithm u
 
 ## Resource
 
-- wiki definition: The algorithm derives this table from the estimated probability or frequency of occurrence (weight) for each possible value of the source symbol. As in other entropy encoding methods, more common symbols are generally represented using fewer bits than less common symbols.
-- code example in python: https://blog.csdn.net/sinat_16968575/article/details/44625743
-- using class in JS(in Chinese): http://www.ruanyifeng.com/blog/2012/07/three_ways_to_define_a_javascript_class.html
 - class ppt: in the [intro](./resource/algo2-greedy-huffman3-typed.pdf); [example](./resource/algo2-greedy-huffman4-typed.pdf)
+- wiki definition: The algorithm derives this table from the estimated probability or frequency of occurrence (weight) for each possible value of the source symbol. As in other entropy encoding methods, more common symbols are generally represented using fewer bits than less common symbols.
+- code example in python using class to show binary tree: https://blog.csdn.net/sinat_16968575/article/details/44625743
+- the leetcode question about tree: "standard" js data structure
+- using class in JS(in Chinese): http://www.ruanyifeng.com/blog/2012/07/three_ways_to_define_a_javascript_class.html
 
 # Assignment 2
 Continuing the previous problem, what is the minimum length of a codeword in your Huffman code?

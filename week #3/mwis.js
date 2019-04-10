@@ -7,28 +7,31 @@ array = array.map(function(n) {
     return parseInt(n)
 });
 
-let A = array.slice(0);
-let S = [];
-A[0] = 0;
-A[-1] = 0;
+console.log(array);
 
-let i = A.length;
-while (i > 1) {
-    if (A[i-1] >= A[i-2] + array[i]) {
-        i = i - 1
+function divide(C) {
+    console.log(C)
+
+    if (C.length <= 2 ) {
+        if (C.length == 1) {
+            return C[0]
+        }
+        if (C[0] > C[1]) {
+            return C[0]
+        } else {
+            return C[1]
+        }
+    }
+
+    let S1 = divide(C.slice(0, C.length - 1));
+    let S2 = divide(C.slice(0, C.length - 2));
+
+    if (S1 > (S2 + C[C.length - 1])) {
+        return S1
     } else {
-        S.push(i);
-        i = i - 2
+        return S2 + C[C.length - 1]
     }
 }
 
-// 答案
-console.log(S);
-// [0, 1, 2, 3, 16, 116, 516, 996].forEach(function(n) {
-//     console.log(S.indexOf(n));
-// });
-sum = 0
-S.forEach(function(n) {
-    sum+=array[n-1]
-})
-console.log(sum)
+
+console.log(divide(array));

@@ -28,10 +28,10 @@ array.forEach(function(n, index) {
 let queue = nodes.slice(0);
 while (queue.length > 1) {
     queue.sort(function(a, b) {
-        return b.freq - a.freq
+        return a.freq - b.freq
     })
-    let node_left = queue.pop(0);
-    let node_right = queue.pop(0);
+    let node_left = queue.shift();
+    let node_right = queue.shift();
     let node_father = new Node(node_left.freq + node_right.freq);
     node_father.left = node_left;
     node_father.right = node_right;

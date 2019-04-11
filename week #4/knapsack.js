@@ -8,31 +8,12 @@ array = array.map(function(n) {
   })
 });
 
-let vw = array.slice(1);
-let W = array[0][0]; // max weight sum
-let Y = array[0][1]; // 可选物品的数量
-let V = 0; // value of best solution
+let goods = [];
+array.slice(1).forEach(function(n) {
+  goods.push({
+    'value': n[0],
+    'weight': n[1]
+  })
+});
 
-console.log(W, vw.length);
-
-
-
-//动态规划
-let A = [];
-for (let i = 0; i <= Y; i++) {
-  A[i] = [];
-}
-for(let i = 0; i <= W; i++) {
-  A[0][i] = 0
-}
-console.log(A);
-for (let i = 1; i <= Y; i++) {
-  for (let x = 0; x <= W; i++) {
-    console.log(vw);
-    A[i][x] = Math.max(A[i-1][x], A[i-1][x-vw[i][1]] + vw[i][0])
-  }
-}
-
-
-
-// 数据输出
+let maxWeight = array[0][0];

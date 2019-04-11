@@ -34,6 +34,9 @@ ADVICE: If you're not getting the correct answer, try debugging your algorithm u
 Continuing the previous problem, what is the minimum length of a codeword in your Huffman code?
 
 # Assignment 3
+
+## Description
+
 In this programming problem you'll code up the dynamic programming algorithm for computing a maximum-weight independent set of a path graph.
 
 Download the text file below.
@@ -51,3 +54,8 @@ This file describes the weights of the vertices in a path graph (with the weight
 For example, the third line of the file is "6395702," indicating that the weight of the second vertex of the graph is 6395702.
 
 Your task in this problem is to run the dynamic programming algorithm (and the reconstruction procedure) from lecture on this data set. The question is: of the vertices 1, 2, 3, 4, 17, 117, 517, and 997, which ones belong to the maximum-weight independent set? (By "vertex 1" we mean the first vertex of the graph---there is no vertex 0.) In the box below, enter a 8-bit string, where the ith bit should be 1 if the ith of these 8 vertices is in the maximum-weight independent set, and 0 otherwise. For example, if you think that the vertices 1, 4, 17, and 517 are in the maximum-weight independent set and the other four vertices are not, then you should enter the string 10011010 in the box below.
+
+## Resource
+
+- 获取value的实现：algo2-dp-wis3-typed.pdf
+- 获取具体index的实现：algo2-dp-wis4-typed.pdf
